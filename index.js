@@ -24,7 +24,9 @@ io.on('connection' , (socket)=>{
     })
 });
 
-
+app.get('/', (req, res)=>{
+    res.json("YES ITS RUNNING");
+})
 
 server.listen(5000, () => {
   console.log('server running at http://localhost:5000');
